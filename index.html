@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            /* height: 500px;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+            background-color: black; */
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;   
+
+        }
+        body{
+            width: 100%;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            /* margin: 15px;
+            padding: 20px;
+            border-radius: 24px; */
+        }
+        .calculator{
+            border: 1px solid gray;
+            border-radius: 20px;
+            padding: 20px;
+            background: transparent;
+            box-shadow: 0px 3px 15px gray;
+        }
+        input{
+            /* height: 150px; */
+            width: 280px;
+            padding: 20px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 40px;
+            /* box-shadow: 0px 2px 15px ; */
+            border-radius: 20px;
+            text-align: right;
+            color: #ffffff;
+            margin: 10px;
+
+
+        }
+        input::placeholder{
+            color: #ffffff;
+        }
+        button{
+            border: none;
+            height: 60px;
+            width: 60px;
+            background-color: black;
+            font-size: 20px;
+            margin: 10px;
+            /* padding: 10px; */
+            color: white;
+            border-radius: 50%;
+            color: #ffffff;
+            box-shadow: -8px -8px 15px rgb(113, 112, 112);
+            padding: 10px;
+            cursor: pointer;
+
+        }
+        .opr{
+            height: 60px;
+            width: 60px;
+            background-color: gray;
+            box-shadow: -5px -5px 15px rgb(152, 149, 149);
+            /* padding: 10px; */
+            color: rgb(184, 177, 177);
+            border-radius: 50%;
+        }
+        .opr1{
+            height: 60px;
+            width: 60px;
+            background-color: orange;
+            padding: 10px;
+            color: #ffffff;
+            border-radius: 50%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="calculator">
+        <input type="text" id="text" class="input" placeholder="0">
+        <div>
+            <button class="button opr">AC</button>
+            <button class="button opr">+/-</button>
+            <button class="button opr">%</button>
+            <button class="button opr1">/</button>
+        </div>
+        <div>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button opr1">x</button>
+        </div>
+        <div>
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button opr1">+</button>
+        </div>
+        <div>
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button opr1">-</button>
+        </div>
+        <div>
+            <button class="button">00</button>
+            <button class="button">0</button>
+            <button class="button">.</button>
+            <button class="button opr1">=</button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
